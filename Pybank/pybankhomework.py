@@ -17,10 +17,10 @@ with open(budget_data_csv_path, newline="") as csvfile:
     csv_header = next(csvfile)
 
     for row in csv_reader:
-        count_months + 1
+        count_months = count_months + 1
 
         current_month_profit_loss = int(row[1])
-        net_profit_loss + current_month_profit_loss
+        net_profit_loss = net_profit_loss + current_month_profit_loss
 
         if (count_months == 1):
             previous_month_profit_loss = current_month_profit_loss
