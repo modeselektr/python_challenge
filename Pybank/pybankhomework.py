@@ -24,7 +24,7 @@ with open(budget_data_csv_path, newline="") as csvfile:
 
         if (count_months == 1):
             previous_month_profit_loss = current_month_profit_loss
-            continue
+            
 
         else:
 
